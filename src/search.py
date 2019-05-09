@@ -145,7 +145,7 @@ def define_path(parent_state,state):
 	trace = list()
 	gameStateKey = getKey(state)
 	
-	while parent_state.has_key(gameStateKey):
+	while parent_state.get(gameStateKey):
 		trace.append(parent_state[gameStateKey][1])
 		trace.append(parent_state[gameStateKey][2])		
 		gameStateKey=parent_state[gameStateKey][0]

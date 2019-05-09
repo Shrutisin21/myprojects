@@ -1,5 +1,4 @@
 import readGame
-import new
 import copy
 #######################################################
 # These are some Helper functions which you have to use 

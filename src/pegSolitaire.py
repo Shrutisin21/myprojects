@@ -8,10 +8,10 @@ def main(args):
 	flag = args.flag
 	if not flag or flag == 1: 
 		#Iterative Deepening Search
-		tic = time.clock()
+		tic = time.time()
 		gameItrObject = pegSolitaireUtils.game(args.input)
 		search.ItrDeepSearch(gameItrObject)
-		toc = time.clock()
+		toc = time.time()
 		timeItr = toc - tic
 		
 		print ("Itr Deepening Search:")
@@ -21,10 +21,10 @@ def main(args):
 	
 	if not flag or flag == 2:
 		#Astar with first heuristic
-		tic = time.clock()
+		tic = time.time()
 		gameAOneObject = pegSolitaireUtils.game(args.input)
 		search.aStarOne(gameAOneObject)
-		toc = time.clock()
+		toc = time.time()
 		timeAOne = toc- tic
 		
 		print ("Astar One Search:")
@@ -35,10 +35,10 @@ def main(args):
 	
 	if not flag or flag == 3:
 		#AStar with second Heuristic
-		tic = time.clock()
+		tic = time.time()
 		gameATwoObject = pegSolitaireUtils.game(args.input)
 		search.aStarTwo(gameATwoObject)
-		toc = time.clock()
+		toc = time.time()
 		timeATwo = toc - tic
 		
 		print ("Astar Two Search:")
